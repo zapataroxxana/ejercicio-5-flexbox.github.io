@@ -1,0 +1,569 @@
+:root {
+    --color__primario: #0071b6; 
+    --color__secundario: #ecc62c;
+    --color__terciario: white;
+    --type__titulos: 'Arimo', sans-serif;
+    --type__secundaria: 'Bebas Neue', cursive;
+
+}
+
+/*propiedades y valores del contenedor */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*Siempre debe ir*/
+    text-decoration: none; /*Opcional, pero sería bueno de acuerdo al proyecto*/
+    margin: auto; /*centrar caja*/
+    list-style: none;
+    font-family: var(--type__titulos);
+}
+
+body {
+    background-color: var(--color__primario);
+    font-size: 10px;
+} 
+
+ /*imagenes*/
+img {
+    width: 100%; /*para que se ajuste al tamaño de todo el contenedor*/
+    height: auto; /*para que se ajuste el alto al tamaño de todo el contenedor*/
+}
+
+/*logo*/
+.logo {
+    width: 10%; /*para que se ajuste al tamaño de todo el contenedor*/
+    height: auto; /*para que se ajuste el alto al tamaño de todo el contenedor*/
+    text-align: left;
+    
+}
+
+/*primera caja, navegador*/
+.navegador {
+    display: flex;
+}
+
+.navegador {
+    background-color: var(--color__primario);
+    padding: 7em 2em;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 3em;
+}
+
+.menu ul li a {
+   color: var(--color__terciario);
+   font-size: 1.8em;
+   border: .3em;
+   border-radius: 2em;
+   padding: .5em;
+   font-family: var(--type__secundaria);
+   letter-spacing: .5em;
+}
+
+.menu ul li a:hover {
+    color: var(--color__terciario);
+    font-size: 2em;
+    border: .3em;
+    border-radius: 2em;
+    padding: .5em;
+    box-shadow: 1.2em 1.4em .5em .4em rgba(0,0,0,0.56);
+ }
+
+ 
+ .buscador a {
+    color: var(--color__terciario);
+    font-size: 1em;
+    border: .3em;
+    border-radius: 2em;
+    padding: .5em;
+ }
+
+ .buscador a:hover {
+    color: var(--color__terciario);
+    font-size: 1.3em;
+    border: .3em;
+    border-radius: 2em;
+    padding: .5em;
+    box-shadow: 1.2em 1.4em .5em .4em rgba(0,0,0,0.56);
+}
+
+
+ /*primer contenedor*/
+.contenedor {
+    display: flex;
+}
+
+.contenedor {
+    background-color: var(--color__primario);
+    padding: 10em;
+}
+
+.contenedor h2 {
+    padding: .5em;
+    color: var(--color__secundario);
+    font-size: 5em;
+    font-family: var(--type__secundaria);
+    letter-spacing: .5em;
+}
+
+.contenedor p {
+    padding: .5em;
+    color: var(--color__terciario);
+    font-size: 2em;
+}
+
+.logo_1 {
+    display: flex;
+    text-align: center;
+    font-size: 100px;
+}
+
+ /*segundo contenedor*/
+.contenedor2 {
+    background-color: var(--color__secundario);
+    padding: 10em;
+}
+
+.contenedor_2 h2 {
+    padding: .5em;
+    color: var(--color__primario);
+    font-size: 5em;
+    font-family: var(--type__secundaria);
+    letter-spacing: .5em;
+}
+
+.contenedor_2 p {
+    padding-bottom: 2em;
+    color: var(--color__terciario);
+    font-size: 2em;
+}
+
+.logo_2 {
+    display: flex;
+    text-align: center;
+    font-size: 1em;
+    padding: 8em;
+}
+
+.logo_2 a:hover {
+    box-shadow: 1.2em 1.4em .3em .2em rgba(0,0,0,0.56);
+}
+
+ /*pie de pagina*/
+ .pie_de_caja_mayor {
+    display: flex;
+    flex-basis: 20%;
+    padding: 2em;
+ }
+
+ .pie_de_caja_mayor1 {
+     display: flex;
+     align-items: flex-start;
+     flex-basis: 55%;
+     justify-content: right;
+}
+
+ .pie__de__pag1 {
+    background-color: var(--color__primario);
+    flex-basis: 40%;
+}
+
+.pie__de__pag1 h4 {
+    padding: .8em;
+    color: var(--color__secundario);
+    font-size: 5em;
+    font-family: var(--type__secundaria);
+    letter-spacing: .5em;
+}
+
+.pie__de__pag1 ul li {
+    display: inline;
+    padding: 1.5em;
+
+}
+
+.pie__de__pag1 ul li a {
+    color: var(--color__terciario);
+    font-size: 1.8em;
+    padding: .5em;
+}
+
+.pie__de__pag1 ul li a:hover {
+    color: var(--color__terciario);
+    font-size: 2em;
+    border: .3em;
+    border-radius: 2em;
+    padding: .5em;
+    box-shadow: 1.2em 1.4em .5em .4em rgba(0,0,0,0.56);
+}
+
+
+.pie1 {
+    list-style: none;
+    font-size: 2em;
+    margin: .2em;
+    margin-right: 2em;
+}
+
+.pie1 a {
+    color: var(--color__terciario);
+}
+
+.pie1 a:hover {
+    color: var(--color__secundario);
+}
+
+
+.pie1 ul li {
+    padding-bottom: 1em;
+}
+
+.pie1 span {
+    color: var(--color__secundario);
+}
+
+.final {
+    display: flex;
+}
+
+.final {
+    padding: 5em;
+    justify-content: space-between;
+}
+
+.registro a {
+    color: var(--color__terciario);
+    font-size: 1em;
+    padding: .5em;
+}
+
+.registro a:hover{
+    color: var(--color__terciario);
+    font-size: 1.3em;
+    border: .3em;
+    border-radius: 2em;
+    padding: .5em;
+    box-shadow: 1.2em 1.4em .5em .4em rgba(0,0,0,0.56);
+}
+
+/*linea*/
+hr {
+    border-color: var(--color__terciario);
+    width: 80%;
+}
+
+
+        /* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+        @media (min-width: 768px) and (max-width: 1024px) {
+
+            * {
+                flex-direction:column;
+            }
+            
+        
+            img {
+               text-align: center;
+            }
+            
+    
+            .logo {
+                width: 40%;
+                text-align: center;
+            }
+            
+            .menu ul li {
+                padding: 1.5em;
+            }
+            
+            .menu ul li a {
+               font-size: 2em;
+               border-radius: 1em;
+               padding: .3em;
+               margin-top: 5em;
+               letter-spacing: .1em;
+            }
+            
+            
+            .buscador a {
+                font-size: .5em;
+             }
+            
+
+             .buscador a:hover {
+                font-size: .5em;
+            }
+            
+            .contenedor {
+                padding: 3em;
+            }
+
+            .contenedor {
+                text-align: center;
+            }
+        
+          
+            .contenedor h2 {
+                text-align: left;
+                font-size: 6em;
+
+            } 
+            
+            .contenedor p {
+                text-align: left;
+                font-size: 2.3em;
+            }
+            
+            .contenedor_2 {
+                padding: .5em;
+            }
+
+            .contenedor_2 p {
+                font-size: 2.3em;
+            }
+
+            .contenedor_2 h2 {
+                letter-spacing: .3em;
+                text-align: center;
+                font-size: 6em;
+            }
+            
+            .logo_2 {
+                font-size: .1em;
+            }
+            
+
+            .logo_2 a:hover {
+                box-shadow: 1.2em 1.4em .3em .2em rgba(0,0,0,0.56);
+            }
+            
+             
+            .pie_de_caja_mayor {
+                padding: 1em;
+             }
+            
+
+            .pie__de__pag1 h4 {
+                padding: .4em;
+                font-size: 4em;
+            }
+            
+            
+            .pie1 {
+                margin: 1em;
+            }
+            
+            
+            .pie1 ul li {
+                padding-bottom: .5em;
+            }
+
+
+
+  }
+
+
+        /* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+        @media (min-width: 481px) and (max-width: 767px) {
+
+            * {
+                flex-direction: column;
+            }
+            
+        
+            img {
+               text-align: center;
+            }
+            
+    
+            .logo {
+                width: 50%;
+                text-align: center;
+            }
+            
+            .menu ul li {
+                padding: 1.3em;
+            }
+            
+            .menu ul li a {
+               font-size: 1em;
+               border-radius: 1em;
+               padding: .3em;
+               margin-top: 5em;
+               letter-spacing: .2em;
+            }
+            
+            
+            .buscador a {
+                font-size: .5em;
+             }
+            
+
+             .buscador a:hover {
+                font-size: .5em;
+            }
+            
+            .contenedor {
+                padding: 6em;
+            }
+
+            .contenedor {
+                text-align: center;
+            }
+        
+          
+            .contenedor h2 {
+                text-align: left;
+            } 
+            
+            .contenedor p {
+                text-align: left;
+            }
+            
+            .contenedor_2 {
+                padding: .5em;
+            }
+
+            .contenedor_2 h2 {
+                letter-spacing: .3em;
+                text-align: center;
+            }
+            
+            .logo_2 {
+                font-size: .1em;
+            }
+            
+
+            .logo_2 a:hover {
+                box-shadow: 1.2em 1.4em .3em .2em rgba(0,0,0,0.56);
+            }
+            
+             
+            .pie_de_caja_mayor {
+                padding: 1em;
+             }
+            
+
+            .pie__de__pag1 h4 {
+                padding: .4em;
+                font-size: 4em;
+            }
+            
+            
+            .pie1 {
+                margin: 1em;
+            }
+            
+            
+            .pie1 ul li {
+                padding-bottom: .5em;
+            }
+            
+
+
+
+}
+
+
+        /* ##Dispositivo = Smartphones de 320px a 479px */
+        @media (min-width: 320px) and (max-width: 480px) {
+
+            * {
+                flex-direction:column;
+            }
+            
+        
+            img {
+               text-align: center;
+            }
+            
+    
+            .logo {
+                width: 50%;
+                text-align: center;
+            }
+            
+            .menu ul li {
+                padding: 1.3em;
+            }
+            
+            .menu ul li a {
+               font-size: 1em;
+               border-radius: 1em;
+               padding: .3em;
+               margin-top: 5em;
+               letter-spacing: .1em;
+            }
+            
+            
+            .buscador a {
+                font-size: .5em;
+             }
+            
+
+             .buscador a:hover {
+                font-size: .5em;
+            }
+            
+            .contenedor {
+                padding: 3em;
+            }
+
+            .contenedor {
+                text-align: center;
+            }
+        
+          
+            .contenedor h2 {
+                text-align: left;
+            } 
+            
+            .contenedor p {
+                text-align: left;
+            }
+            
+            .contenedor_2 {
+                padding: .5em;
+            }
+
+            .contenedor_2 h2 {
+                letter-spacing: .3em;
+                text-align:center;
+            }
+            
+            .logo_2 {
+                font-size: .1em;
+            }
+            
+
+            .logo_2 a:hover {
+                box-shadow: 1.2em 1.4em .3em .2em rgba(0,0,0,0.56);
+            }
+            
+             
+            .pie_de_caja_mayor {
+                padding: 1em;
+             }
+            
+
+            .pie__de__pag1 h4 {
+                padding: .4em;
+                font-size: 4em;
+            }
+            
+            
+            .pie1 {
+                margin: 1em;
+            }
+            
+            
+            .pie1 ul li {
+                padding-bottom: .5em;
+            }
+            
+            
+            
+            
+
+}
